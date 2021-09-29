@@ -93,3 +93,5 @@ BEB1BEB
 transmission3.txt ==> Posición: 776
 23D14E41D32
 ==============
+Substring más largo
+transmission1 and transmission2: LCS: 6F3A0

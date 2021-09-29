@@ -2,8 +2,11 @@
 #include <fstream> 
 #include <string> 
 #include <vector>
+#include <algorithm>
+#define MAX 1001
 
 using namespace std;
+int matrix [MAX][MAX] = {0};
 
 // longest proper prefix which is also suffix
 vector<int> lps(string patron){
@@ -29,7 +32,7 @@ vector<int> lps(string patron){
 	return lpsv;
 }
 
-// Complejidad: O(n)
+// O(n)
 vector<int> kmp(string texto, string patron){
 	vector<int> posMatch;
 	vector<int> lpsv = lps(patron);
@@ -133,13 +136,55 @@ void printPalindrome(string palindrome, string text, int idx, ofstream &outfile)
     outfile << palindrome << endl;
 }
 
+// O(n*m)
+void solveLCSStr(string s1, string s2, ofstream &outfile){
+    int maxi = 0, row, col;
+    for(int i=0; i<s1.length(); i++){
+        if(s1[i] == s2[0]){
+            matrix[i][0] = 1; maxi = 1;
+        }else{
+            matrix[i][0] = 0;
+        }
+    }for(int j=0; j<s2.length(); j++){
+        if(s2[j] == s1[0]){
+            matrix[0][j] = 1; maxi = 1;
+        }else{
+            matrix[0][j] = 0;
+        }
+    }
+
+    for(int i=1; i<s1.length(); i++){
+        for(int j=1; j<s2.length(); j++){
+            if(s1[i] == s2[j]){
+                matrix[i][j]  = matrix[i-1][j-1]+1;
+                //maxi = (matrix[i][j] > maxi ? matrix[i][j] : maxi);
+                if(matrix[i][j] > maxi){
+                    maxi = matrix[i][j];
+                    row = i; col = j;
+                }
+            }else{
+                matrix[i][j]  = 0;
+            }
+        }
+    }
+    char* lcsstring = (char*)malloc((maxi + 1) * sizeof(char));
+    while(matrix[row][col] != 0) {
+        lcsstring[--maxi] = s2[col - 1]; // or s2[col-1]
+        // move diagonally up to previous cell
+        row--;
+        col--;
+    }
+    outfile << "LCS: " << lcsstring << endl;
+    //return maxi;
+}
+
 int main(){
     ifstream mfile;
     ofstream outfile("checking.txt");
     string fileName, fileM, malicious, text;
     vector<string> texts;
     
-    fileM = "mcode.txt";    //  malicious code KMP search
+    fileM = "mcode.txt";    //  a. malicious code KMP search
     mfile.open(fileM);
     while(!mfile.eof()){
         mfile >> malicious;
@@ -160,18 +205,21 @@ int main(){
         }
     }
     mfile.close();
-    // longest palindrome and its position
+    
     outfile << "==============" << endl;
-    outfile << "Palíndromo más grande: " << endl;
+    outfile << "Palíndromo más grande: " << endl; // b. longest palindrome and its position
     for(int i=0; i<=2; i++){
         string palindrome = manacher(texts[i]);
         printPalindrome(palindrome, texts[i], i+1, outfile);
-        //cout << "longest palindrome: " << palindrome << endl;
         if(i!=2){
             outfile << "----" << endl;
         }
     }
     outfile << "==============" << endl;
+    outfile << "Substring más largo" << endl;
+    outfile << "transmission1 and transmission2: ";
+    solveLCSStr(texts[0].substr(0, 1000), texts[1].substr(0, 1000), outfile);
+    //.substr(0, 1000)
 
     outfile.close();
     return 0;
