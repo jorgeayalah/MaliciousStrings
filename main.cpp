@@ -60,6 +60,7 @@ vector<int> kmp(string texto, string patron){
 	return posMatch;
 }
 
+// O(n)
 void printKMP(vector<int> posMatch, string malicious, string fileName, ofstream &outfile){
     outfile << fileName << " ==> " << posMatch.size() << " veces" << endl;
     if (posMatch.size() == 0){
@@ -72,7 +73,7 @@ void printKMP(vector<int> posMatch, string malicious, string fileName, ofstream 
         outfile << posMatch[posMatch.size()-1] << endl;
 	}
 }
-
+// O(n)
 string manacher(string text){
 	string T = "";
 	int n = text.length();
@@ -125,7 +126,7 @@ string manacher(string text){
 	}
 	return outp;
 }
-
+// O(n)
 void printPalindrome(string palindrome, string text, int idx, ofstream &outfile){
     vector<int> posMatch = kmp(text, palindrome);
     outfile << "transmission" << idx << ".txt ==> Posición: ";
@@ -173,7 +174,7 @@ void solveLCSStr(string s1, string s2, ofstream &outfile){
         row--; // move diagonally up to previous cell
         col--;
     }
-    outfile << "LCS: " << lcsstring << endl;
+    outfile << lcsstring << endl;
     //return maxi;
 }
 
@@ -202,6 +203,7 @@ int main(){
             //outfile << text << endl;
             infile.close();
         }
+		outfile << endl;
     }
     mfile.close();
     
@@ -215,10 +217,9 @@ int main(){
         }
     }
     outfile << "==============" << endl;
-    outfile << "Substring más largo" << endl;
+    outfile << "Substring más largo" << endl; // c. Longest common substring comparison
     outfile << "transmission1 and transmission2: ";
     solveLCSStr(texts[0].substr(0, 1000), texts[1].substr(0, 1000), outfile);
-    //.substr(0, 1000)
 	outfile << "transmission1 and transmission3: ";
     solveLCSStr(texts[0].substr(0, 1000), texts[2].substr(0, 1000), outfile);
 	outfile << "transmission2 and transmission3: ";

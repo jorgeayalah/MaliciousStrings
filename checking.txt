@@ -5,6 +5,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 Código: 336F9
 transmission1.txt ==> 0 veces
 No hay coincidencias
@@ -12,6 +13,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 Código: ABCA
 transmission1.txt ==> 15 veces
 2158, 2161, 2805, 2808, 5561, 5564, 7469, 7472, 7475, 7478, 7481, 7484, 7487, 7490, 7493
@@ -19,6 +21,7 @@ transmission2.txt ==> 33 veces
 118, 121, 124, 127, 669, 2900, 2903, 2906, 3443, 3446, 4719, 4722, 6523, 6526, 6529, 6532, 6535, 6538, 6541, 6544, 6547, 6550, 6553, 7900, 7903, 7906, 7909, 7912, 8964, 8967, 8970, 8973, 13699
 transmission3.txt ==> 16 veces
 1184, 1187, 1190, 3001, 3004, 6505, 6508, 8308, 8311, 8314, 8317, 8320, 8323, 8326, 8329, 8332
+
 Código: AABAA
 transmission1.txt ==> 0 veces
 No hay coincidencias
@@ -26,6 +29,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 Código: 8B702F
 transmission1.txt ==> 0 veces
 No hay coincidencias
@@ -33,6 +37,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 Código: 73A2
 transmission1.txt ==> 0 veces
 No hay coincidencias
@@ -40,6 +45,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 Código: 1C339
 transmission1.txt ==> 0 veces
 No hay coincidencias
@@ -47,6 +53,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 Código: FEDE4
 transmission1.txt ==> 0 veces
 No hay coincidencias
@@ -54,6 +61,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 Código: EEE704
 transmission1.txt ==> 0 veces
 No hay coincidencias
@@ -61,6 +69,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 Código: 323FC
 transmission1.txt ==> 0 veces
 No hay coincidencias
@@ -68,6 +77,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 Código: 70C7AC
 transmission1.txt ==> 0 veces
 No hay coincidencias
@@ -75,6 +85,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 Código: 74911B
 transmission1.txt ==> 0 veces
 No hay coincidencias
@@ -82,6 +93,7 @@ transmission2.txt ==> 0 veces
 No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
+
 ==============
 Palíndromo más grande: 
 transmission1.txt ==> Posición: 1527
@@ -94,6 +106,6 @@ transmission3.txt ==> Posición: 776
 23D14E41D32
 ==============
 Substring más largo
-transmission1 and transmission2: LCS: F3A0D
-transmission1 and transmission3: LCS: D5162
-transmission2 and transmission3: LCS: FA0F9
+transmission1 and transmission2: F3A0D
+transmission1 and transmission3: D5162
+transmission2 and transmission3: FA0F9
