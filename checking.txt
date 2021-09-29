@@ -94,4 +94,6 @@ transmission3.txt ==> Posición: 776
 23D14E41D32
 ==============
 Substring más largo
-transmission1 and transmission2: 
+transmission1 and transmission2: LCS: F3A0D
+transmission1 and transmission3: LCS: D5162
+transmission2 and transmission3: LCS: FA0F9

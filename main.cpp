@@ -173,7 +173,7 @@ void solveLCSStr(string s1, string s2, ofstream &outfile){
         row--; // move diagonally up to previous cell
         col--;
     }
-    ouutfile << "LCS: " << lcsstring << endl;
+    outfile << "LCS: " << lcsstring << endl;
     //return maxi;
 }
 
@@ -219,6 +219,10 @@ int main(){
     outfile << "transmission1 and transmission2: ";
     solveLCSStr(texts[0].substr(0, 1000), texts[1].substr(0, 1000), outfile);
     //.substr(0, 1000)
+	outfile << "transmission1 and transmission3: ";
+    solveLCSStr(texts[0].substr(0, 1000), texts[2].substr(0, 1000), outfile);
+	outfile << "transmission2 and transmission3: ";
+    solveLCSStr(texts[1].substr(0, 1000), texts[2].substr(0, 1000), outfile);
     outfile.close();
     return 0;
 };
