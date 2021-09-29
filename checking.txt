@@ -1,42 +1,18 @@
-Código: 7BE3A
-transmission1.txt ==> 0 veces
-No hay coincidencias
-transmission2.txt ==> 0 veces
-No hay coincidencias
+Código: AA
+transmission1.txt ==> 3 veces
+427, 615, 857
+transmission2.txt ==> 2 veces
+574, 667
 transmission3.txt ==> 0 veces
 No hay coincidencias
 
-Código: 336F9
-transmission1.txt ==> 0 veces
-No hay coincidencias
-transmission2.txt ==> 0 veces
-No hay coincidencias
-transmission3.txt ==> 0 veces
-No hay coincidencias
-
-Código: ABCA
-transmission1.txt ==> 15 veces
-2158, 2161, 2805, 2808, 5561, 5564, 7469, 7472, 7475, 7478, 7481, 7484, 7487, 7490, 7493
-transmission2.txt ==> 33 veces
-118, 121, 124, 127, 669, 2900, 2903, 2906, 3443, 3446, 4719, 4722, 6523, 6526, 6529, 6532, 6535, 6538, 6541, 6544, 6547, 6550, 6553, 7900, 7903, 7906, 7909, 7912, 8964, 8967, 8970, 8973, 13699
-transmission3.txt ==> 16 veces
-1184, 1187, 1190, 3001, 3004, 6505, 6508, 8308, 8311, 8314, 8317, 8320, 8323, 8326, 8329, 8332
-
-Código: AABAA
-transmission1.txt ==> 0 veces
-No hay coincidencias
-transmission2.txt ==> 0 veces
-No hay coincidencias
-transmission3.txt ==> 0 veces
-No hay coincidencias
-
-Código: 8B702F
-transmission1.txt ==> 0 veces
-No hay coincidencias
-transmission2.txt ==> 0 veces
-No hay coincidencias
-transmission3.txt ==> 0 veces
-No hay coincidencias
+Código: A13
+transmission1.txt ==> 3 veces
+23, 153, 822
+transmission2.txt ==> 1 veces
+253
+transmission3.txt ==> 1 veces
+344
 
 Código: 73A2
 transmission1.txt ==> 0 veces
@@ -46,66 +22,74 @@ No hay coincidencias
 transmission3.txt ==> 0 veces
 No hay coincidencias
 
-Código: 1C339
+Código: 1C3
 transmission1.txt ==> 0 veces
 No hay coincidencias
 transmission2.txt ==> 0 veces
 No hay coincidencias
+transmission3.txt ==> 1 veces
+527
+
+Código: CDEC
+transmission1.txt ==> 4 veces
+0, 463, 640, 705
+transmission2.txt ==> 0 veces
+No hay coincidencias
+transmission3.txt ==> 4 veces
+17, 269, 282, 466
+
+Código: FFF
+transmission1.txt ==> 1 veces
+764
+transmission2.txt ==> 0 veces
+No hay coincidencias
+transmission3.txt ==> 5 veces
+352, 353, 354, 355, 356
+
+Código: 139
+transmission1.txt ==> 1 veces
+24
+transmission2.txt ==> 4 veces
+254, 680, 683, 686
+transmission3.txt ==> 2 veces
+441, 537
+
+Código: CF40
+transmission1.txt ==> 2 veces
+29, 708
+transmission2.txt ==> 1 veces
+994
 transmission3.txt ==> 0 veces
 No hay coincidencias
 
-Código: FEDE4
-transmission1.txt ==> 0 veces
-No hay coincidencias
-transmission2.txt ==> 0 veces
-No hay coincidencias
-transmission3.txt ==> 0 veces
-No hay coincidencias
+Código: 77
+transmission1.txt ==> 4 veces
+56, 473, 483, 767
+transmission2.txt ==> 6 veces
+22, 414, 415, 646, 745, 974
+transmission3.txt ==> 6 veces
+66, 427, 637, 638, 639, 640
 
-Código: EEE704
+Código: 567
 transmission1.txt ==> 0 veces
 No hay coincidencias
-transmission2.txt ==> 0 veces
-No hay coincidencias
-transmission3.txt ==> 0 veces
-No hay coincidencias
-
-Código: 323FC
-transmission1.txt ==> 0 veces
-No hay coincidencias
-transmission2.txt ==> 0 veces
-No hay coincidencias
-transmission3.txt ==> 0 veces
-No hay coincidencias
-
-Código: 70C7AC
-transmission1.txt ==> 0 veces
-No hay coincidencias
-transmission2.txt ==> 0 veces
-No hay coincidencias
-transmission3.txt ==> 0 veces
-No hay coincidencias
-
-Código: 74911B
-transmission1.txt ==> 0 veces
-No hay coincidencias
-transmission2.txt ==> 0 veces
-No hay coincidencias
+transmission2.txt ==> 1 veces
+272
 transmission3.txt ==> 0 veces
 No hay coincidencias
 
 ==============
 Palíndromo más grande: 
-transmission1.txt ==> Posición: 1527
-806608
+transmission1.txt ==> Posición: 75
+A2E2A
 ----
-transmission2.txt ==> Posición: 936
-BEB1BEB
+transmission2.txt ==> Posición: 45
+C8F8C
 ----
-transmission3.txt ==> Posición: 776
-23D14E41D32
+transmission3.txt ==> Posición: 351
+0FFFFFFF0
 ==============
 Substring más largo
-transmission1 and transmission2: F3A0D
-transmission1 and transmission3: D5162
-transmission2 and transmission3: FA0F9
+transmission1 and transmission2: 943A5
+transmission1 and transmission3: CDEC
+transmission2 and transmission3: 571139
