@@ -169,12 +169,11 @@ void solveLCSStr(string s1, string s2, ofstream &outfile){
     }
     char* lcsstring = (char*)malloc((maxi + 1) * sizeof(char));
     while(matrix[row][col] != 0) {
-        lcsstring[--maxi] = s2[col - 1]; // or s2[col-1]
-        // move diagonally up to previous cell
-        row--;
+        lcsstring[--maxi] = s1[row]; // or s2[col]
+        row--; // move diagonally up to previous cell
         col--;
     }
-    outfile << "LCS: " << lcsstring << endl;
+    ouutfile << "LCS: " << lcsstring << endl;
     //return maxi;
 }
 
@@ -220,7 +219,6 @@ int main(){
     outfile << "transmission1 and transmission2: ";
     solveLCSStr(texts[0].substr(0, 1000), texts[1].substr(0, 1000), outfile);
     //.substr(0, 1000)
-
     outfile.close();
     return 0;
 };
