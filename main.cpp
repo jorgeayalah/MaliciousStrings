@@ -1,3 +1,6 @@
+//Andres Pinones A01570150
+//Jorge Ayala A00828633
+//Aldo Berain A00827874
 #include <iostream>
 #include <fstream> 
 #include <string> 
